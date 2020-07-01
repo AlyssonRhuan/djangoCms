@@ -30,3 +30,6 @@ python manage.py makemigrations polls
 python manage.py createsuperuser
 
 #No app, admin, registrar os models que vão aparecer no admin
+
+#Para usar em models o imagePicker
+python -m pip install Pillow
