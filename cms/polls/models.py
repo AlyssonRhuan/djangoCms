@@ -13,9 +13,9 @@ class Choice(models.Model):
 
 
 class Homepage(models.Model):
+    banner_title = models.CharField(max_length=200, default='')    
+    banner_button_text = models.CharField(max_length=200, default='')
+    banner_button_link = models.CharField(max_length=200, default='/')
     banner_pic = models.ImageField(
-        upload_to='polls/static/assets/homepage/', 
-        height_field=None, 
-        width_field=None, 
-        max_length=100
+        upload_to='polls/static/assets/homepage/'
     )
